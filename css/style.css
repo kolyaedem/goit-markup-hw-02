@@ -1,7 +1,7 @@
 :root {
   /* fonts */
-    --primary-font: 
-    --secondary-font: 
+  /* --primary-font:  */
+  /* --secondary-font:  */
 
   /* text colors */
   --accent-color: #2196f3;
@@ -13,15 +13,11 @@
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
 
-  /* others */     
-    /* #000000
-    
-    #FFFFFF99
+  /* others */
+  /*   
     #ECECEC */
-
-
-
-
+  --address__link: #ffffff99;
+  --logo-black: #000000;
 }
 
 body {
@@ -33,15 +29,96 @@ body {
 }
 
 .btn {
-    font-family: inherit;
+  font-family: inherit;
+  
+}
+
+.btn:hover, .btn:focus {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
 }
 
 /* reset */
 .link {
-    text-decoration: none;
-    color: currentColor;
+  text-decoration: none;
+  color: currentColor;
 }
 
 .list {
-    list-style: none;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* utils */
+.accent-color,
+.logo-header,
+.logo-footer,
+.nav__link:hover,
+.nav__link:focus,
+.auth__link:hover,
+.auth__link:focus {
+  color: var(--accent-color);
+}
+
+.header-title,
+.team-title, .portfolio_btn, .gallery__title {
+  color: var(--secondary-color);
+}
+
+/* header */
+
+.logo {
+  color: var(--logo-black);
+}
+
+/* order */
+
+.header {
+  color: var(--primary-bg-color);
+}
+
+.order-btn {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+}
+
+/* benefits */
+
+.title {
+  color: var(--secondary-color);
+}
+
+/* team */
+
+/* footer */
+
+.footer__link,
+.maps__link {
+  color: var(--primary-bg-color);
+}
+
+.address__link {
+  color: var(--address__link);
+}
+
+
+
+/* portfolio */
+
+.portfolio_btn {
+
+  background-color: var(--secondary-bg-color);
 }
